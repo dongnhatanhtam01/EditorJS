@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/css/style.css" class="ref">
+    <title>Document</title>
+</head>
+<style type="text/css" media="screen">
+    #editor {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+</style>
+
+<body>
+    <div class="showcase">
+        <div class="showcase__left">
+            <div class="editor">
+                <div class="editor__wrapper">
+                    <div class="editor__body">
+                        <div id="editorCode" class="editor__code"></div>
+                    </div>
+                    <div class="editor__footer">
+                        <div class="editor__footer--left">
+                            <button class="editor__btn editor__run">Run</button>
+                            <button class="editor__btn editor__reset">Reset ></button>
+                        </div>
+                        <div class="editor__footer--right">
+                            <div class="editor__console">
+                                <ul class="editor__console-logs">
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="showcase__right">
+            <div class="map">
+                x
+            </div>
+        </div>
+    </div>
+
+    <!-- Required Ace Libraries -->
+    <script src="lib/js/src-min/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="lib/js/src-min/mode-javascript.js"></script>
+    <script src="lib/js/src-min/ext-language_tools.js"></script>
+    <script src="https://rawgithub.com/ajaxorg/ace/master/demo/kitchen-sink/require.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="./lib/js/editor.js"></script>
+    <script src="./lib/js/editor-console.js"></script>
+</body>
+
+</html>
